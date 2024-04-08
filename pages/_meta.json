@@ -2,6 +2,18 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
+  "churchSite": {
+    "title": "Church Website",
+    "type": "page",
+    "href": "https://missouriavenuebaptistchurch.com",
+    "newWindow": true
+  },
+  "churchAdmin": {
+    "title": "Church Admin Site",
+    "type": "page",
+    "href": "https://missouriavenuebaptistchurch.com/admin",
+    "newWindow": true
+  },
   "about": {
     "title": "About",
     "type": "page"
@@ -9,7 +21,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "mailto:missouriavebaptist@gmail.com",
     "newWindow": true
   }
 }
