@@ -1,6 +1,9 @@
 {
   "index": "Introduction",
   "techbooth": "Tech Booth",
+  "---": {
+    "type": "separator"
+  },
   "churchSite": {
     "title": "Church Website",
     "type": "page",
