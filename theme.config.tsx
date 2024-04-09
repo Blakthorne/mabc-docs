@@ -1,6 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import Footer from './components/Footer'
 
 const config: DocsThemeConfig = {
   logo: <span>MABC Tech Docs</span>,
@@ -15,7 +14,10 @@ const config: DocsThemeConfig = {
         <a href="https://davidpolar.com" target="_blank">
           David Polar
         </a>
-        .
+        {'. Built with '}
+        <a href="https://nextra.site/" target="_blank">
+          Nextra
+        </a>
       </span>
     ),
   },
