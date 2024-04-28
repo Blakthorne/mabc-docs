@@ -1,9 +1,11 @@
 {
-  "index": "Introduction",
+  "index": "Welcome",
+  "audio": "Audio",
   "techbooth": "Tech Booth",
   "---": {
     "type": "separator"
   },
+  "mission-statement": "Mission Statement",
   "churchSite": {
     "title": "Church Website",
     "type": "page",
