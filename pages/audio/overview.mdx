@@ -1,5 +1,5 @@
 import { Callout } from 'nextra/components'
-import Image from 'next/image'
+import Diagram from '../../components/Diagram.tsx'
 
 # Overview
 
@@ -11,14 +11,9 @@ All things considered, we run a fairly minimal audio system. It's all contained 
 
 We'll start by introducing you to the most important equipment in the system.
 
-<div style={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: "36px",
-        marginBottom: "24px"
-    }}>
-    ![Diagram of platform](/booth.svg)
-</div>
+<Diagram altText="Auditorium Diagram" imageName="auditorium" />
+<Diagram altText="Booth Diagram" imageName="booth" />
+<Diagram altText="Stage Diagram" imageName="stage" />
 
 ## The Mixer
 

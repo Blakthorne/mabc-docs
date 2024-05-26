@@ -1,5 +1,6 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from 'react';
+import { useRouter } from 'next/router';
+import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: <span>MABC Tech Docs</span>,
@@ -22,8 +23,11 @@ const config: DocsThemeConfig = {
     ),
   },
   useNextSeoProps() {
-    return {
-      titleTemplate: '%s – MABC'
+      const { asPath } = useRouter()
+      if (asPath !== '/') {
+        return {
+          titleTemplate: '%s – MABC'
+        }
     }
   }
 }
