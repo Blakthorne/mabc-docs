@@ -5,8 +5,9 @@ import { useTheme } from "nextra-theme-docs";
 /**
  * Render a formatted diagram given the source file and alt text to display
  * 
- * @param alText - the alt text
- * @param imageName - the base name of the diagram (wihout leading slash, extension, or theme designation)
+ * @param alText the alt text
+ * @param imageName the base name of the diagram (wihout leading slash, extension, or theme designation)
+ * @param label the diagram's label
  */
 export default function Diagram({ altText, imageName, label }) {
     

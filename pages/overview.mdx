@@ -4,7 +4,20 @@ import Diagram from '../components/Diagram.tsx'
 
 ## Birds-Eye View
 
-Before we jump into the weeds during the next few chapters, let's take a few moments together to look at how everything integrates. Here are the major components in our audio-visual system, organized by location. Take note that the diagram only represents the location relations, not spatial proximity.
+Before we jump into the weeds during the next few chapters, let's take a few moments together to look at the high-level integrations.
 
 <Diagram altText="Auditorium Diagram" imageName="auditorium" label="Auditiorium" />
 
+The diagram above lays out the major components in our audio-visual system, organized by location. Take note that it only represents the locations relationally without regard to their actual location in the building.
+
+## Audio
+
+Audio travels in both [digital](https://en.wikipedia.org/wiki/Digital_audio) and [analog](https://reverb.com/news/how-does-analog-audio-work-basic-pro-audio-concepts) form between the [stage](/audio#stage) and the [sound booth](/audio#sound-booth). Then it is sent from the sound booth to the PA speakers.
+
+## Video
+
+Video and slides follow a slightly less linear path. Presently, video is used at two displays—the auditorium projector and the Mother's Room TV. An Apple TV plugs into the projector, allowing us to send whatever material from wherever we'd like (e.g. a speaker's iPad or a Mac in the sound booth). The video of the service is also sent in real time, over HDMI, to the TV in the Mother's Room.
+
+## Internet
+
+Internet for the building is all distributed from the Church Office. Ethernet is distributed to several locations around the building via a switch, with switches and Wifi Access Points provided at most of those outlying location as well.
