@@ -3,10 +3,14 @@
   "overview": "Overview",
   "audio": "Audio",
   "soundbooth": "Sound Booth",
-  "---": {
+  "sep1": {
     "type": "separator"
   },
   "mission-statement": "Mission Statement",
+  "sep2": {
+    "type": "separator"
+  },
+  "equipment-reference": "Equipment Reference",
   "churchSite": {
     "title": "Church Website",
     "type": "page",

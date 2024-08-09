@@ -26,7 +26,7 @@ We have microphones at various places around the stage (and in the [ceiling](/au
 
 ### Stagebox
 
-The [stagebox](https://en.wikipedia.org/wiki/Stage_box) is the heart here, sending signal from the microphones to the booth and receiving signal going to the [stage monitors](/audio#stage-monitors). 
+The [stagebox](https://en.wikipedia.org/wiki/Stage_box) is the centerpiece here, sending signal from the microphones to the booth and receiving signal going to the [stage monitors](/audio#stage-monitors). 
 
 ### Wireless Receiver
 
@@ -47,26 +47,44 @@ This switch provides ethernet to the Apple TV.
 
 ## Sound Booth
 
-<Diagram altText="Booth Diagram" imageName="booth" label="Sound Booth" />
+<Diagram altText="Sound Booth Diagram" imageName="booth" label="Sound Booth" />
 
 ### Mixer
 
-The [mixer](https://en.wikipedia.org/wiki/Mixing_console) functions as the heart of the whole system. Everything runs either to or from the mixer, and it controls pretty much everything. Ours is a 
+The [mixer](https://en.wikipedia.org/wiki/Mixing_console) functions as the heart of the audio system—almost everything runs either to or from it. We use a [digital console](https://en.wikipedia.org/wiki/Digital_mixing_console) that allows us to manipulate the audio in some fancy ways that are essential to creating a successful livestream. We have an entire chapter dedicated to this here.a;sdlkfjas;dlkfjas;dlkfjsa;dlkfjas;ldkfj#########**********
 
 ### Amp
 
-The 
-
-### Computer
+*Amp* is short for *Amplifier*, signifying that is *amplifies* the audio so that it's loud enough when it gets to the speakers. Without this step in the process, the speakers would sound really wimpy. This piece of equipment is really simple though. It has inputs coming from the [mixer](/audio#mixer) and outputs going to the [PA Speakers](/audio#pa-speakers).
 
 ### Camera
 
+What else would we do with a camera? We video the service with a camera in the sound booth and send the signal via HDMI to the computer. We use the video but ignore the audio.
+
+### Computer
+
+Now we have to do something with that audio and video that we're capturing. We use livestreaming software to combine the audio and video into a high-quality stream and recording. 
+
 ### HDMI-Ethernet Transmitter
 
+We also send our livestream to other locations in the building over Ethernet. This way, viewers at those other locations in the building (like the Mother's Room) are viewing the service in realtime, as opposed to dealing with the 20 to 30 second delay on the online stream.
+
+<Callout>
+    We need to [convert the HDMI singal to run over Ethernet](https://www.avaccess.com/blogs/guides/what-is-hdmi-over-ethernet/), since HDMI cables can't be run long distances (the digital signal usually gives up and dies after about 50ft of HDMI cable).
+</Callout>
+
+And to accomplish this conversion, we have an HDMI-Ethernet Transmitter in the soundbooth and an Ethernet-HDMI Receiver at each of the streaming locations.
+
 ### Sound Booth Network Switch
+
+The switch in the sound booth connects everything there to the internet over Ethernet so we don't have worry about spotty Wifi. This also supplies internet to a Wifi Access Point in the cabinet above the sound booth so that there is a good signal across the Auditorium.
 
 
 ## Congregation Mics
 
+These mics are key to creating an immersive experience in the livestream. Hanging from the ceiling near the front of the room and pointing toward the pews, they do quite well at picking up the singing and praying of the congregation. We also use them to help amplify in the room congregational prayers as well.
+
 
 ## PA Speakers
+
+Without these, the whole system would kind of be for nought. A pair of speakers, a [woofer](https://en.wikipedia.org/wiki/Woofer)/[tweeter](https://en.wikipedia.org/wiki/Tweeter) and a [subwoofer](https://en.wikipedia.org/wiki/Subwoofer), sits at each side of the auditorium pointing inward toward the congregation. We use [passive speakers](https://www.howtogeek.com/827082/active-vs-passive-speakers/), meaning that they rely on a separate (amp)[/audio#amp] for signal amplification, but the speakers themselves do not need a dedicated power source.
