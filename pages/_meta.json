@@ -2,7 +2,7 @@
   "index": "Welcome",
   "overview": "Overview",
   "audio": "Audio",
-  "soundbooth": "Sound Booth",
+  "soundbooth-checklist": "Sound Booth Checklist",
   "sep1": {
     "type": "separator"
   },
@@ -22,10 +22,6 @@
     "type": "page",
     "href": "https://missouriavenuebaptistchurch.com/admin",
     "newWindow": true
-  },
-  "about": {
-    "title": "About",
-    "type": "page"
   },
   "contact": {
     "title": "Contact ↗",
