@@ -10,6 +10,7 @@ export default {
     sep2: {
         type: 'separator'
     },
+    troubleshooting: 'Troubleshooting',
     equipment_reference: 'Equipment Reference',
     churchSite_link: {
         title: 'Church Website',
