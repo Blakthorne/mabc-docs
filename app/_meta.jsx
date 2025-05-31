@@ -11,6 +11,7 @@ export default {
         type: 'separator'
     },
     troubleshooting: 'Troubleshooting',
+    templates: 'Templates',
     equipment_reference: 'Equipment Reference',
     churchSite_link: {
         title: 'Church Website',

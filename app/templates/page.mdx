@@ -1,0 +1,117 @@
+---
+title: Templates
+description: Templates
+---
+
+import { Callout, Steps } from 'nextra/components'
+
+# Templates
+
+There are several templates that we use for various descriptions or file names. Most of the file name conventions can be found elsewhere in the handbook as well, but we've provided them all here for convenience's sake.
+
+<Callout type="info">
+    Anything you see in curly braces (`{ }`) is a placeholder that you should replace with the appropriate value. For example, `{ YYYYMMDD }` should be replaced with the date of the service in the format `YYYYMMDD`, such as `20250518` for May 18, 2025.
+</Callout>
+
+## File Names
+
+### Sermon Audio File
+
+- **Template** - `{ YYYYMMDD }-Sun{ AM/PM }-{ Speaker Last Name }`
+- **Example** - `20250518-SunAM-Polar`
+
+### Full Service Audio File
+
+- **Template** - `{ YYYY-MM-DD } Sun{ AM/PM }-{ Speaker Last Name }`
+- **Example** - `2025-05-18 SunAM-Polar`
+
+### Livestream Recording File
+
+We use the same convention for these files as for the [full service audio files](#full-service-audio-file).
+
+
+## Descriptions
+
+### YouTube Livestream
+
+Here's an example description for a YouTube livestream. You'll need to change the **date**, **service**, **speaker**, and **Bible passage** according to the details of a given service and provide the appropriate [copyright notices](#music-copyright-notice).
+
+```markdown
+Come join us Sundays at 11am and 6pm in Clearwater, FL!
+
+Date: May 18, 2025
+Service: Sunday Morning
+Speaker: Pastor Rick Polar
+Bible Passage: John 10:27-29
+
+
+We are located at 1178 Belleair Rd, Clearwater, FL. All are welcome.
+
+------------------------------------------------------
+
+Music from the Service
+
+{ Copyright Notices }
+```
+
+### YouTube Music Video
+
+Here's an example description for a YouTube music video. You'll need to change the **date** and provide the appropriate [copyright notice](#music-copyright-notice).
+
+```markdown
+Come join us Sundays at 11am and 6pm in Clearwater, FL!
+
+Performed on May 18, 2025
+
+We are located at 1178 Belleair Rd. Clearwater, FL. All are welcome.
+
+-----
+
+{ Copyright Notice }
+```
+
+
+### Music Copyright Notice
+
+This is a general template, with some caveats given below, for a copyright notice. We need to include one of these for every song in a given service at the bottom of the [YouTube livestream description](#youtube-livestream).
+
+<Callout>
+    You can read more about the copyright requirements from the CCLI website [here](https://ccli.com/us/en/church-copyright-license-terms-of-agreement).
+</Callout>
+
+```markdown showLineNumbers
+"{ Song Name }" Words by { Lyricist }. Music by { Composer }.
+{ Copyright Information }
+Used by permission. CCLI Streaming License 1564484.
+```
+
+#### Line 1
+
+The first line provides information about the song name and creators. It has two variations—the one listed in the template above, and another for when the song lyrics and music were created by the same person, shown as follows—
+```markdown
+"{ Song Name }" Words and Music by { Lyricist/Composer }.
+```
+
+#### Line 2
+
+The second line provides the copyright information. If the song is in the public domain, write out the second line as follows—
+```markdown 
+Public Domain.
+```
+
+Otherwise, follow this template to describe the copyright information—
+```markdown
+© { Year } { Copyright Holder }.
+```
+
+And if the copyright notice includes an administrator, follow this template—
+```markdown
+© { Year } { Copyright Holder } { Year (if another year is included) } { Administrator }.
+```
+
+#### Line 3
+
+The third line provides information about the CCLI license we have for streaming music, and it is always the same. It should be written as follows—
+```markdown
+Used by permission. CCLI Streaming License 1564484.
+```
