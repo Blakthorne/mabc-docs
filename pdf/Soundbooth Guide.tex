@@ -1,0 +1,429 @@
+\documentclass[12pt]{article}
+\usepackage{ebgaramond}
+\usepackage{titlesec}
+
+% Add a left margin to account for the binding
+\usepackage[a4paper, bindingoffset=1in]{geometry}
+
+% Use dashes instead of bullets for itemized lists
+\renewcommand{\labelitemi}{\labelitemfont\textendash}
+
+% Create a page break after the table of contents
+\let\oldtableofcontents\tableofcontents%remember the definition
+\renewcommand\tableofcontents{
+  \oldtableofcontents%use the standard toc
+  \clearpage
+}
+
+% Start each new section on a new page
+\newcommand{\sectionbreak}{\clearpage}
+
+% Title contents
+\title{Missouri Avenue Baptist Church\\Soundbooth Guide}
+\date{March, 2024}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty} % Remove page number from title page
+
+\tableofcontents
+
+
+% Power On and Configure Equipment
+\section{Power On and Configure Equipment}
+
+    % Mixer
+    \subsection{Mixer}
+    \begin{enumerate}
+        \item Turn on with the rocker switch on the rear right
+        \item In \emph{Scenes} on the right side of the board, click \emph{View}
+        \item Use left scroll knob under the screen to find the scene called \emph{Default Service}
+        \item Press knob to select the scene
+        \item Move the \emph{Main} fader to \emph{0}
+    \end{enumerate}
+
+    % Amp
+    \subsection{Amp}
+        Turn on with push button on the front right
+
+    % Computer
+    \subsection{Computer}
+        Turn on with small, round, inset button on the rear right
+
+    % Mother's Room T.V.
+    \subsection{Mother's Room T.V.}
+        Turn on with remote (red light on T.V. turns on)
+
+    % Camera
+    \subsection{Camera}
+    \begin{enumerate}
+        \item Connect power cable on right side
+        \item Connect mini HDMI cable on left side
+        \item Power on with rectangular button on left side
+        \item Open lens cover with switch on right side
+    \end{enumerate}
+
+
+% Pre-Service
+\section{Pre-Service}
+
+    % System Settings
+    \subsection{System Settings}
+    \begin{enumerate}
+        \item Click on the Sound Icon in the Taskbar
+        \item Set \emph{Sound Output} to \emph{LCD TV}
+    \end{enumerate}
+
+    % Audacity
+    \subsection{Audacity}
+    \begin{enumerate}
+        \item Go to \emph{Desktop/}
+        \item Open \emph{Temporary.aup3}
+        \item Delete the track containing the last recording
+        \item Go to \emph{Audio Setup} and ensure these settings are used---
+        \begin{description}
+            \item [Playback Device] X-USB
+            \item [Recording Device] X-USB
+            \item [Recording Channels] 2 (Stereo)
+        \end{description}
+        \item Set Metadata---
+        \begin{enumerate}
+            \item Click \emph{Edit}
+            \item Click \emph{Metadata Editor} and set Metadata with these settings---
+            \begin{description}
+                \item [Artist Name] \{\emph{Speaker Name}\}
+                \item [Track Title] \{\emph{Sermon Title}\}
+                \item [Album Title] Missouri Avenue Baptist Church Downloads
+                \item [Track Number] \{\emph{Last Track Number + 1}\}
+                \item [Year] \{\emph{Current Year}\}
+                \item [Genre] Podcast
+                \item [Comments] \{\emph{Verse Reference for Sermon}\}
+            \end{description}
+            \item Click \emph{OK}
+        \end{enumerate}
+    \end{enumerate}
+
+    % YouTube
+    \subsection{YouTube}
+    \begin{enumerate}
+        \item Open Chrome
+        \item Go to \emph{YouTube Dash} (saved in Favorites bar)
+        \item Click \emph{Content} in the sidebar
+        \item Go to the \emph{Live} section
+        \item Open the \emph{Upcoming} livestream and change these settings---
+        \begin{description}
+            \item [Title] \{\emph{Sermon Title}\}
+                \item [Description] See \textbf{Appendix B}
+            \item [Playlist] \{\emph{Morning/Evening Services}\}
+        \end{description}
+    \end{enumerate}
+
+    % Website
+    \subsection{Website}
+    \begin{enumerate}
+        \item In Chrome, go to \emph{Church Website} (saved in Favorites bar)
+        \item Login as \emph{mabcadmin}
+        \item In the left sidebar, hover over \emph{Sermons}
+        \item Select \emph{Add New Sermon} and use these settings---
+        \begin{description}
+            \item [Title] \{\emph{Sermon Title}\}
+            \item [Description] \{\emph{Verse Reference for Sermon}\}
+            \item [Video for Sermon] \hfill
+            \begin{enumerate}
+                \item Go to the \emph{Upcoming} livestream in YouTube as outlined in \textbf{2.3 Youtube}
+                \item Copy the video link
+                \item Back in Wordpress, paste this into the \emph{Sermon URL}
+                \item Replace "live" with "embed" in the URL
+            \end{enumerate}
+        \end{description}
+        \item In the right sidebar, select the \emph{Sermon Speaker}
+        \item Click \emph{Publish}
+    \end{enumerate}
+
+    % OBS
+    \subsection{OBS}
+    \begin{enumerate}
+        \item Open OBS
+        \item Send video to the TV---
+        \begin{enumerate}
+            \item Right-Click in the video panel
+            \item Hover over \emph{Fullscreen Projector (Preview)}
+            \item Select \emph{LCD TV}
+        \end{enumerate}
+        \item Select livestream---
+        \begin{enumerate}
+            \item Click \emph{Manage Broadcast}
+            \item Click the \emph{Select Existing Broadcast} Tab
+            \item Select the livestream for the upcoming service
+            \item Click \emph{Select Broadcast}
+        \end{enumerate}
+    \end{enumerate}
+
+    % Attendance
+    \subsection{Attendance}
+    \begin{enumerate}
+        \item Open \emph{Desktop/Attendance/\{Current Year\}/}
+    \end{enumerate}
+
+
+% At Start of Service
+\section{At Start of Service}
+
+    % OBS
+    \subsection{OBS}
+    \begin{enumerate}
+        \item Click \emph{Start Streaming}
+        \item After it finishes processing the livestream start, click \emph{Go live}
+    \end{enumerate}
+
+    % Audacity
+    \subsection{Audacity}
+    \begin{enumerate}
+        \item Click the \emph{Record} button
+    \end{enumerate}
+
+    % Attendance
+    \subsection{Attendance}
+    \begin{enumerate}
+        \item Set the \emph{Service Started} time (\texttt{Win+Shift+;})
+    \end{enumerate}
+
+
+% During Service
+\section{During Service}
+
+    % Audacity
+    \subsection{Audacity}
+    \begin{enumerate}
+        \item Set a marker named \emph{In} when the sermon begins (\texttt{Win+.})
+        \item Set a marker named \emph{Out} when the sermon ends (\texttt{Win+.})
+    \end{enumerate}
+
+    % Attendance
+    \subsection{Attendance}
+    \begin{enumerate}
+        \item Set the attendance during the song service (before children leave)
+        \item Update as more people arrive
+    \end{enumerate}
+
+
+% Post-Service
+\section{Post-Service}
+
+    % OBS
+    \subsection{OBS}
+    \begin{enumerate}
+        \item Click \emph{End Broadcast}
+        \item Click \emph{Stop Streaming}
+        \item Click \emph{Stop Recording}
+    \end{enumerate}
+
+    % Audacity Part 1
+    \subsection{Audacity Part 1}
+    \begin{enumerate}
+        \item Click the \emph{Stop} button
+        \item Save the Audacity project
+    \end{enumerate}
+
+    % Attendance
+    \subsection{Attendance}
+    \begin{enumerate}
+        \item Set the \emph{Service Ended} time (\texttt{Win+Shift+;})
+        \item Save the file
+        \item Close the spreadsheet program
+    \end{enumerate}
+
+    % Audacity Part 2
+    \subsection{Audacity Part 2}
+    \begin{enumerate}
+        \item Export the sermon portion of the service---
+        \begin{enumerate}
+            \item Highlight the section between the \emph{In} and \emph{Out} markers
+            \item Click \emph{File}
+            \newpage
+            \item Click \emph{Export Audio} and use these settings---
+            \begin{description}
+                \item [Filename] YYYYMMDD-Sun\{\emph{AM/PM}\}-\{\emph{Speaker Last Name}\}
+                \item [Destination Folder] \emph{Desktop/}
+                \item [Format] MP3
+                \item [Channels] Stereo
+                \item [Sample Rate] 44.1kHz
+                \item [Quality] 64kbps
+                \item [Bit Rate Mode] Constant
+                \item [Export Range] Current Selection
+            \end{description}
+            \item Click \emph{Export}
+        \end{enumerate}
+        \item Export the entire service---
+        \begin{enumerate}
+            \item Click anywhere in Audacity to remove the track highlight
+            \item Click \emph{File}
+            \item Click \emph{Export Audio} and use the same settings as in \textbf{5.4.1} except---
+            \begin{description}
+                \item [Filename] YYYY-MM-DD Sun\{\emph{AM/PM}\}-\{\emph{Speaker Last Name}\}
+                \item [Folder] \emph{Sermon Archive/\{Current Year\}/}
+                \item [Quality] 128kbps
+                \item [Export Range] Entire Project
+            \end{description}
+            \item Click \emph{Export}
+            \item Close Audacity
+        \end{enumerate}
+    \end{enumerate}
+
+    % Website
+    \subsection{Website}
+    \begin{enumerate}
+        \item Naviage to the sermon created in \textbf{2.4 Website}
+        \item Click \emph{Add Media} next to the \emph{Audio} label
+        \item Click on the \emph{Upload Files} Tab
+        \item Go to \emph{Desktop/}
+        \item Select the file exported from Audacity in \textbf{5.4.1}
+        \item Once uploaded, click \emph{Select}
+        \item In the ride sidebar, click \emph{Update}
+    \end{enumerate}
+
+    % Backup Files in Finder
+    \subsection{Backup Files in Finder}
+    \begin{enumerate}
+        \item Audio---
+        \begin{enumerate}
+            \item Go to \emph{Sermon Archive/\{Current Year\}/}
+            \item Copy the file exported from Audacity in \textbf{5.4.2}
+            \item Go to \emph{Backup Sermon Archive/\{Current Year\}/}
+            \item Paste the file
+        \end{enumerate}
+        \item Video---
+        \begin{enumerate}
+            \item Go to \emph{Temp Video/}
+            \item Delete the .mkv file
+            \item Copy the .mp4 file
+            \item Go to \emph{Backup Video Archive/\{Current Year\}/}
+            \item Paste the file
+            \item Go back to \emph{Temp Video/}
+            \item Delete the .mp4 file
+        \end{enumerate}
+    \end{enumerate}
+
+
+% Setup for Next Service
+\section{Setup for Next Service}
+
+    % OBS
+    \subsection{OBS}
+    \begin{enumerate}
+        \item Click \emph{Manage Broadcast}
+        \item Click on the \emph{Create New Broadcast} Tab and use these settings---
+        \begin{description}
+            \item [Title] Sunday \{\emph{Morning/Evening}\} Service - \{\emph{Month}\} DD, YYYY
+            \item [Description] \{\emph{Blank}\}
+            \item [Privacy] Public
+            \item [Category] Nonprofits \& Activism
+            \item [Is this video made for kids?] No
+            \item [Thumbnail] \{\emph{Blank}\}
+            \item [Latency] Normal
+            \item [Enable DVR] Yes
+            \item [360 Video] No
+            \item [Schedule for Later] Yes
+            \item [Enable Auto-Start] No
+            \item [Enable Auto-Stop] No
+            \item [Datetime] \{\emph{Datetime for next service}\}
+        \end{description}
+        \item Click \emph{Schedule broadcast}
+        \item Close OBS
+    \end{enumerate}
+
+    % Website
+    \subsection{Website}
+    \begin{enumerate}
+        \item Get the video link---
+        \begin{enumerate}
+            \item Go to \emph{YouTube Dash} (saved in Favorites bar)
+            \item Click \emph{Content} in the sidebar
+            \item Go to the \emph{Live} section
+            \item Open the \emph{Upcoming} livestream
+            \item Copy the video link
+        \end{enumerate}
+        \item Update the \emph{Livestream} page in Wordpress---
+        \begin{enumerate}
+            \item Click \emph{Pages} in the left sidebar
+            \item Go to the \emph{Livestream} page
+            \item Replace the URL with the one just copied from YouTube in \textbf{6.2.1}
+            \item Replace "live" with "embed" in the URL
+            \item Click \emph{Update}
+        \end{enumerate}
+    \end{enumerate}
+
+
+% Power Off Equipment
+\section{Power Off Equipment}
+    \subsection{Camera}
+    \begin{enumerate}
+        \item Power off with rectangular button on left side
+        \item Close lens cover with switch on right side
+        \item Disconnect mini HDMI cable on left side
+        \item Disonnect power cable on right side
+    \end{enumerate}
+    \subsection{Mother's Room T.V.}
+        Turn off with remote (red light on T.V. turns off)
+    \subsection{Computer}
+        Shut down
+    \subsection{Amp}
+        Turn off with push button on the front right
+    \subsection{Mixer}
+    \begin{enumerate}
+        \item Press the \emph{Setup} button next to the screen
+        \item Scroll with left knob to select \emph{Shutdown}
+        \item Press knob to shut down
+        \item Turn off with the rocker switch on the rear right
+    \end{enumerate}
+
+
+% Appendices
+\section{Appendices}
+
+    % Troubleshooting
+    \subsection{Appendix A - Troubleshooting}
+
+        % No Sound in the Auditorium
+        \subsubsection{No Sound in the Auditorium}
+        Ensure these are correct---
+        \begin{itemize}
+            \item \emph{Main} fader is at \emph{0}
+            \item Amp is turned on
+            \item Stagebox and Wireless Receiver on the platform are turned on
+        \end{itemize}
+
+        % No Sound in the Mother's Room
+        \subsubsection{No Sound in the Mother's Room}
+        See \textbf{2.1} for instructions
+
+        % No Video in the Mother's Room
+        \subsubsection{No Video in the Mother's Room}
+        See \textbf{2.5.2} for instructions
+
+    \newpage
+    % YouTube Description
+    \subsection{Appendix B - YouTube Video Description Format}
+    Come join us Sundays at 11am and 6pm in Clearwater, FL! \\
+    \\
+    \{\emph{Month}\} DD, YYYY \\
+    \{\emph{Sunday Morning/Evening}\} \\
+    \{\emph{Speaker Name}\} \\
+    \{\emph{Sermon Title}\} \\
+    \{\emph{Verse Reference for Sermon}\} \\
+    \\
+    \{\emph{Adjust this as necessary}\} \\
+    x:xx Opening \& Worship \\
+    x:xx Announcements \\
+    x:xx Continued Worship \\
+    x:xx Special Music \\
+    x:xx Sermon \\
+    x:xx Invitiation \\
+    \\
+    \\
+    We are located at 1178 Belleair Rd, Clearwater, FL. All are welcome. \\
+    \\
+    ------------------------------------ \\
+    \\
+    \{\emph{Copyright Licensing Information}\} \\
+\end{document}
